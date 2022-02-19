@@ -9,7 +9,7 @@ app.get("/clock", (req, res) => {
     res.sendFile(__dirname + "/public/clock.html")
 })
 
-const port = 8080
+const port = process.env.PORT || 8080
 app.listen(port, (error) => {
     console.log("Successfully connected to port", port)
 })
