@@ -13,5 +13,3 @@ const port = 5000
 app.listen(process.env.PORT || "5000", (error) => {
     console.log("Successfully connected to port", port)
 })
-
-//test
